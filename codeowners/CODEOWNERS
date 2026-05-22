@@ -1,0 +1,8 @@
+# Everything in the repo → these reviewers
+# *  @org/team-name  @username1  @username2
+
+# Or per-folder
+# /backend/  @org/backend-team
+# /frontend/ @org/frontend-team
+* @vsbopi/otp
+/.github/  @vsbopi/devops

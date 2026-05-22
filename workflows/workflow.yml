@@ -1,0 +1,20 @@
+name: Workflow Name
+on: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Service Environment'  
+        required: true
+        type: choice
+        options:
+          - dev
+          - qa
+          - uat
+          - prod
+        default: dev
+jobs:
+  build:
+    uses: vsbopi/workflows/.github/workflows/workflow.yml@main
+    secrets: inherit
+    with:
+      environment: ${{ github.event.inputs.environment }}
